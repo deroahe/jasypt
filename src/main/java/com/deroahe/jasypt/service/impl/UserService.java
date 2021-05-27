@@ -14,7 +14,7 @@ public class UserService {
 
     private UserRepository userRepository;
 
-    @Resource
+    @Resource(name = "encryptionService")
     private EncryptionService encryptionService;
 
     @Autowired

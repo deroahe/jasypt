@@ -1,0 +1,8 @@
+version: '3'
+services:
+  playground-web-backend:
+    image: jasypt-app:latest
+    environment:
+      MONGODB_URI: mongodb://playground-web-db:27017/playground-web
+    ports:
+      - 8080:8080
